@@ -1,82 +1,215 @@
-#home h4,
-#home p,
-#home ul,
-#home h2
-{
-    text-align: center;
-}
-#home h4,
-#home h2
-{
-    font-weight: 700;
+body, html {
+    font-family: 'Open Sans', 'Varela Round', sans-serif;
+    margin-inline: 2%;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
 }
 
-.center-container {
+header {
+    background: #264653;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header-content h1 {
+    color: #34b6a7;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.2);
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 3.4em;
+    margin-bottom: 10px;
+    
+}
+
+.header-content h2 {
+    margin: 5px 0;
+    font-size: 1.8em;
+    font-weight: bolder;
+    color: #eee;
+    margin-bottom: 20px;
+}
+
+nav {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
-#portfolio hr
-{
-    border: 1px solid #3498db;
-    height: 2px; /* Set the height of the line */
-    background-color: #3498db;
-    margin: 5px 0; /* Add some spacing above and below the line */
+header nav ul li {
+    margin: 0 15px;
 }
-/* Stylized borders*/
-.Styled-box-container-wide 
-{
-    box-shadow: 0px 5px 2px rgba(10, 31, 44, 0.5);
-    border: 2px solid #3498db; 
-    border-radius: 20px;
-    
-    padding: 12px; /* Padding for content within the container */
-    margin: 0 auto; /* Center the container */
-    margin-top: 10px;
-    width: 100%; /*  width for the container */
-    box-sizing: border-box; /* Include border and padding in the width */
-    
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
 }
-.Styled-box-container-outer-border
-{
-    padding: 24px;
-    outline: 4px solid #0d5b8f; /* Outline color and width */
-    border-radius: 20px;
+
+nav ul li a:hover, nav ul li a:focus {
+    color: #2a9d8f;
 }
-.Styled-box-container-slim-container {
+
+.content-section {
+    margin-block: 20px;
+    margin-inline: 0px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    color: #2a9d8f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover, a:focus {
+    color: #264653;
+    text-decoration: underline;
+}
+
+.content-section h2 {
+    color: #264653;
+    font-weight: bold;
+}
+
+.content-section ul {
+    padding-left: 20px;
+    list-style-position: inside;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.about-education {
     display: flex;
-    justify-content: center;
-    align-items: stretch;
-    box-shadow: 0px 5px 2px rgba(10, 31, 44, 0.5);
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    margin-top: 10px;
-    border: 2px solid #3498db;
-    border-radius: 20px;
-    box-sizing: border-box; /* Include border and padding in the width */
+    flex-direction: column;
+    border-right: 2px solid #ccc;
+    padding-right: 20px;
+    margin-right: 20px;
 }
 
-
-.Styled-box-container-slim 
-{
-    border: 1px solid #3498db;
-    
-    padding: 12px; /* Padding for content within the container */
-    
-    margin-top: -2px;
-    width: 100%; /* Example width for each small container */
-    display: inline-block; /* Display small containers inline */
-    box-sizing: border-box; /* Include border and padding in the width */
-    
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 0;
 }
 
-
-/* Center text within the section container */
-.Styled-box-container-wide h4,
-.Styled-box-container-wide p {
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img, .portfolio-item iframe {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.portfolio-item a {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 6px 14px;
+    width: 200px;
+    background-color: #2a9d8f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.2s ease;
+}
+
+.portfolio-item div {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.portfolio-item a:hover {
+    background-color: #e76f51;
+}
+
+.portfolio-item p {
+    font-size: 1.0em;
+    color: #333;
+    line-height: 1.8;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    hyphens: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #262653;
+    color: white;
+}
+
+#contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.contact-info a {
+    color: #2a9d8f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #e76f51;
+}
+
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 35px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .content-section,
+    #contact {
+        font-size: 16px;
+    }
+
+    .about-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
