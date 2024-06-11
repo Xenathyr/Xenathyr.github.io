@@ -22,7 +22,7 @@
             </ul>
         </nav>
     </header>
-    <section id="about" class="content-section">
+    <section class="content-section">
         <div class="about-grid">
             <div class="about-education">
                 <div>
@@ -39,6 +39,15 @@
                     <h2>Education</h2>
                     <p><strong>Bachelor's Degree in Business Information Technology</strong><br>Kajaani University of Applied Sciences, 2018 - 2022<br>Thesis: <a href="https://urn.fi/URN:NBN:fi:amk-2022112924824">Goal-oriented Action Planning and Unreal Engine</a></p>
                 </div>
+                <div>
+                    <h2>Work experience / CV </h2>
+                    <a href="./files/Samu_Haaja_CV.pdf" download="Samu_Haaja_CV">Open my resume</a>
+                    <p>While I sadly have not found success with employment in game development, I've worked a job or another for most of my life.</p>
+                    <p>I've always fit in, done my best and found success.</p>
+                    <p><b>I'm reliable. </b>Thats the only thing my past work experience can tell you. I'll do my best to grow and learn, to match expectations.</p>
+                </div>
+
+
             </div>
             <div>
                 <h2>Skills</h2>
@@ -83,7 +92,8 @@
                 <a href="https://www.youtube.com/watch?v=Q7aOvHOWVQg">Progress Trailer</a>
             </div>
             <div class="portfolio-item">
-                <img src="Images/WaistingOil2.png" alt="Waisting Oil">
+                <iframe src="https://www.youtube.com/embed/AdUvIpM4ZtU?start=40s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%;"></iframe>
+                <!-- <img src="Images/WaistingOil2.png" alt="Waisting Oil"> -->
                 <h3>Waisting Oil</h3>
                 <p>A topdown horror-themed action game, with focus on stealth, sound and limited visibility. The player has to combat aliens and loot containers to find a way off the oilrig.</p>
                 <p>Worked as lead programmer and producer. Worked on player, combat, sound/stealth mechanic and monster AI.</p>
@@ -94,7 +104,8 @@
                 <a href="https://github.com/Xenathyr/WaistingOil">GitHub Repository</a>
             </div>
             <div class="portfolio-item">
-                <img src="Images/AugurOfLight2.png" alt="Augur of Light">
+                <iframe src="https://www.youtube.com/embed/YwalVTJV5LY?start=40s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%;"></iframe>
+               <!-- <img src="Images/AugurOfLight2.png" alt="Augur of Light"> -->
                 <h3>Augur of Light</h3>
                 <p>Augur of Light is a 1st person puzzle game, where you adventure on a Finnish island solving puzzles. During the first wave of Covid-19 in Finland, we made this game as a university project about coping mechanisms for depression. We worked together with mental industry professionals.</p>
                 <p>I was part of the implementation team tasked with implementing prototyped content. I also programmed the player, inventory, UI, menues and the world interaction the player could perform.</p>
@@ -114,6 +125,57 @@
             <!-- Additional projects can be added here following the same structure -->
         </div>
     </section>
+    <section id="about" class="content-section">
+        <h3>My personal section</h3>
+        <div class="accordion">
+            <button class="accordion-button">About me</button>
+            <div class="panel">
+                <p> I've written some of my thoughts, experiences and truths into this section. I am an open person, and will answer any questions you might have.</p>
+                <!-- TAB LINKS -->
+                <div class="tab-links">
+                    <button class="tab-link" onclick="openTab(event, 'Stuff1')">Me</button>
+                    <button class="tab-link" onclick="openTab(event, 'Stuff2')">Past experiences</button>
+                    <button class="tab-link" onclick="openTab(event, 'Stuff3')">My biggest hurdles</button>
+                </div>
+                <!-- TAB CONTENT -->
+                <div id="Stuff1" class="tab-content">
+                    <h4>Family</h4>
+                    <p>I have a fiancee, that I've shared lifes hurdles with for 13 years. We've supported each other, and enjoyed life together.</p>
+                    <p> We also own three very cute and friendly cats. One of them enjoyed purring into the mic at every morning daily during my term as an UI/UX designer </p>
+
+                    <h4>Hobbies</h4>
+                    <p>I have loved videogames since I was tiny. Not a big surprise there. I enjoy trying out different types of games. I love seeing what makes them tick.</p>
+                    <p>I enjoy seeing the ideas and visions people had when they made the games. There is a type of soul to most games.</p>
+
+                </div>
+                <div id="Stuff2" class="tab-content">
+                    <p>I almost became an Bachelor in Energy engineering. I worked as an engineer during school, and quickly realised I had no passion for it.</p>
+                    <p> I wanted to find something I actually want to do for the rest of my life. I took a leap of faith and left for the best place to learn game programming. </p>
+                    <p> I wanted to be the guy who makes the impossible possible.</p>
+                </div>
+
+                <div id="Stuff3" class="tab-content">
+                    <p>When I create something, I feel great, when I solve the coding problems, I feel amazing. And looking back I know I've done a good job, but still; "Imposter syndrome". 
+                    <br>
+                        I feel like I just haven't seen a real challenge yet, and I'm actually not good programming, and it affects my motivation to create things on my own.
+                    <br>
+                     I know there is a truth to that aswell, so I'm hoping I can find a place where I'll be challenged, and encouraged by fellow gamedevs.
+                     </p>
+                </div>
+            </div>
+            <button class="accordion-button">What I'm up to currently</button>
+            <div class="panel">
+                <p>Working on my skillset. Sometimes its hard to find something to focus on, as I'd like to work on something I'll need at my next employment opportunity. </p>
+
+                <h4>Work experience</h4>
+                <p>While I sadly have not found success with employment in game development, I've worked a job or another for most of my life.</p>
+                <p>I've always fit in, done my best and found success.</p>
+                <p><b>I'm reliable. </b>Thats the only thing my past work experience can tell you. I'll do my best to grow and learn, to match expectations.</p>
+
+            </div>
+            <!-- accordion-button here-->
+        </div> <!-- /accordion-->
+    </section>
     <section id="contact" class="content-section">
         <h2>Contact Me</h2>
         <div class="contact-info">
@@ -125,6 +187,7 @@
     <footer>
         <p>Copyright © Samu Haaja</p>
     </footer>
+    <script src="index.js"></script>     
 </body>
 </html>
 
